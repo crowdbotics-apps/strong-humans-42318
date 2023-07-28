@@ -49,7 +49,9 @@ const Screen = () => {
           <Text style={styles.logDate}>Date: 01/01/2022</Text>
           <Text style={styles.logTitle}>Log Title</Text>
           <Text style={styles.logDescription}>Short description of the log</Text>
-          <TouchableOpacity style={styles.selectButton}>
+          <TouchableOpacity style={styles.selectButton} onPress={() => {
+          navigation.navigate("ScreenAI24");
+        }}>
             <Text style={styles.selectButtonText}>Select</Text>
           </TouchableOpacity>
         </View>
