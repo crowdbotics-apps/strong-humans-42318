@@ -37,7 +37,9 @@ const Screen = () => {
         <TouchableOpacity style={styles.button}>
           <Text style={styles.buttonText}>My Medical History</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button} onPress={() => {
+        navigation.navigate("ScreenAI25");
+      }}>
           <Text style={styles.buttonText}>Settings</Text>
         </TouchableOpacity>
       </View>
