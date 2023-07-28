@@ -13,7 +13,9 @@ const Screen = () => {
         </View>
       </View>
       <View style={styles.section}>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button} onPress={() => {
+        navigation.navigate("ScreenAI23");
+      }}>
           <Text style={styles.buttonText}>Add a new Daily Log</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.button} onPress={() => {
@@ -25,13 +27,17 @@ const Screen = () => {
           <Text style={styles.logDate}>Date: 01/01/2022</Text>
           <Text style={styles.logTitle}>Log Title</Text>
           <Text style={styles.logDescription}>Short description of the log</Text>
-          <TouchableOpacity style={styles.selectButton}>
+          <TouchableOpacity style={styles.selectButton} onPress={() => {
+          navigation.navigate("ScreenAI22");
+        }}>
             <Text style={styles.selectButtonText}>Select</Text>
           </TouchableOpacity>
         </View>
       </View>
       <View style={styles.section}>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button} onPress={() => {
+        navigation.navigate("ScreenAI20");
+      }}>
           <Text style={styles.buttonText}>Add a new Doctor appointment Log</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.button} onPress={() => {
