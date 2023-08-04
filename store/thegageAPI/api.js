@@ -1,6 +1,6 @@
 import axios from "axios"
 const thegageAPI = axios.create({
-  baseURL: "https://the-gage-42318.botics.co",
+  baseURL: "https://strong-humans-42318.botics.co",
   headers: { Accept: "application/json", "Content-Type": "application/json" }
 })
 function api_docs_schema_retrieve(payload) {
